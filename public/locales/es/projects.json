@@ -1,0 +1,55 @@
+{
+    "title": "Mis proyectos recientes",
+    "subtitle": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+    "button": "Visitar sitio web",
+    "projects": [
+        {
+            "title": "Usuarios",
+            "description": "Lista de usuarios, donde cada usuario contiene tareas, utilizando la API JSONPlaceholder",
+            "imgPath": "{{path}}",
+            "gitHub": "https://github.com/estebandm/list-users.git",
+            "live": "https://list-users-7bdca.web.app/login",
+            "color": "#243678"
+        },
+        {
+            "title": "Pokemones",
+            "description": "App que lista de a 5 pokemones y en cada uno se puede ver su detalle, utilizando la API PokeApi",
+            "imgPath": "{{path}}",
+            "gitHub": "https://github.com/tevixdev/pokeapi",
+            "live": "https://pokeapiem.web.app/home",
+            "color": "#005911"
+        },
+        {
+            "title": "Héroes de marvel",
+            "imgPath": "{{path}}",
+            "description": "Lista héroes de marvel, utilizando la API Marvel Developer Portal",
+            "gitHub": "https://github.com/estebandm/heros-marvel-2.0",
+            "live": "https://heros-marvel-tevi.web.app/",
+            "color": "#ca453c"
+        },
+        {
+            "title": "Películas",
+            "description": "App realizada en nextjs que muestra películas paginadas de a 20, también cuenta con filtros de búsqueda",
+            "imgPath": "{{path}}",
+            "gitHub": "https://github.com/estebandm/movies",
+            "live": "https://tevix-pedia.vercel.app",
+            "color": "#812443"
+        },
+        {
+            "title": "Rick y Morty",
+            "description": "App que lista todos los personajes de rick and morty con infinite scroll, también cuenta con dark mode",
+            "imgPath": "{{path}}",
+            "gitHub": "https://github.com/estebandm/rink-and-morty",
+            "live": "https://rick-and-morty-67c08.web.app/",
+            "color": "#006158"
+        },
+        {
+            "title": "Portafolio",
+            "description": "Mi anterior portafolio",
+            "imgPath": "{{path}}",
+            "gitHub": "https://github.com/estebandm/portfolio",
+            "live": "https://estebanmilicich-c711f.web.app",
+            "color": "#16668a"
+        }
+    ]
+}

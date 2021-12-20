@@ -1,0 +1,33 @@
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+
+import { Footer, Img, Title, ContainerIcons, A } from './styles'
+import Instagram from 'Components/Icons/Instagram'
+import LinkedIn from 'Components/Icons/LinkedIn'
+import logo from 'Assets/Images/logo-white.svg'
+
+const Contact = () => {
+  const { t } = useTranslation('contact')
+  return (
+    <Footer>
+      <Img alt='logo' src={logo}/>
+      <Title>
+        {t('title')}
+      </Title>
+      <ContainerIcons>
+        <A
+          className="fab fa-instagram"
+          href='https://www.instagram.com/estebanmilicich/'
+          target='_blank'
+        />
+        <A
+          className="fab fa-linkedin-in"
+          href='https://www.linkedin.com/in/estebanmilicich/'
+          target='_blank'
+        />
+      </ContainerIcons>
+    </Footer>
+  )
+}
+
+export default Contact

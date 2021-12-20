@@ -1,0 +1,58 @@
+{
+    "title": "Front-end Developer",
+    "subtitle": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+    "languages": "Languages I speak:",
+    "devTools": "Dev Tools:",
+    "skills": [
+        {
+            "logo": "{{logo}}",
+            "name": "HTML"
+        },
+        {
+            "logo": "{{logo}}",
+            "name": "Javascript"
+        },
+        {
+            "logo": "{{logo}}",
+            "name": "CSS"
+        },
+        {
+            "logo": "{{logo}}",
+            "name": "Oracle"
+        },
+        {
+            "logo": "{{logo}}",
+            "name": "React"
+        },
+        {
+            "logo": "{{logo}}",
+            "name": "MySql"
+        }
+    ],
+    "tools": [
+        {
+            "logo": "{{logoPath}}",
+            "name": "VSCode"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitHub"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitBash"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitLab"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Firebase"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Material-Ui"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "title": "Desarrollador Front-end",
+    "subtitle": "Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.",
+    "languages": "Lenguajes en los que poseo conocimiento:",
+    "devTools": "Herramientas de desarrollo:",
+    "skills": [
+        {
+            "logo": "{{logoPath}}",
+            "name": "HTML"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Javascript"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "CSS"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Oracle"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "React"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "MySql"
+        }
+    ],
+    "tools": [
+        {
+            "logo": "{{logoPath}}",
+            "name": "VSCode"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitHub"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitBash"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "GitLab"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Firebase"
+        },
+        {
+            "logo": "{{logoPath}}",
+            "name": "Material-Ui"
+        }
+    ]
+}
