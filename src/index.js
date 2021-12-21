@@ -5,13 +5,9 @@ import Routes from './Routes'
 import './Config/i18next-config'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
-import RefsContext from 'Context/RefsContext'
-
 ReactDOM.render(
   <React.StrictMode>
-    <RefsContext.Provider>
-      <Routes />
-    </RefsContext.Provider>
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 )
