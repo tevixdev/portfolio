@@ -1,4 +1,4 @@
-import React, { createContext, useState, useRef } from 'react'
+import React, { createContext, useState, useRef, useEffect } from 'react'
 
 export const Context = createContext()
 
@@ -6,21 +6,38 @@ const Provider = ({ children }) => {
   const initialRefs = {
     home: useRef(),
     aboutMe: useRef(),
-    contact: useRef(),
+    skills: useRef(),
     projects: useRef(),
-    skills: useRef()
+    contact: useRef()
   }
-  /* const [refHome, setRefHome] = useState()
-  const [refAboutMe, setRefAboutMe] = useState()
-  const [refContact, setRefContact] = useState()
-  const [refProjects, setRefProjects] = useState()
-  const [refSkills, setRefSkills] = useState() */
-
   const [refs, setRefs] = useState(initialRefs)
+  const [section, setSection] = useState()
+
+  const changeStateUrl = (entries, observer) => {
+    entries.forEach(entrie => (
+      entrie.isIntersecting && console.log(entrie.target)
+    ))
+  }
+  const observer = new IntersectionObserver(changeStateUrl, {
+    root: null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold: 1.0
+  })
+
+  useEffect(() => {
+    console.log(refs.home.current)
+    refs.home.current && observer.observe(refs.home.current)
+    refs.aboutMe.current && observer.observe(refs.aboutMe.current)
+    refs.skills.current && observer.observe(refs.skills.current)
+    refs.projects.current && observer.observe(refs.projects.current)
+    refs.contact.current && observer.observe(refs.contact.current)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [section])
 
   const value = {
     refs,
-    setRefs
+    setRefs,
+    setSection
   }
 
   return <Context.Provider value={value}>{children}</Context.Provider>

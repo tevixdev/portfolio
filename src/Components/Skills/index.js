@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { Container, Ul, P, Img, ContainerLogo, Bold } from './styles'
-
+import { Context as RefsContext } from 'Context/RefsContext'
 import CodeIcon from 'Components/Icons/Code'
 import { skillsPath, devToolsPath } from './constants'
 
 const Skills = () => {
+  const { refs, setSection } = useContext(RefsContext)
   const { t } = useTranslation('skills')
+  useEffect(() => {
+    setSection('skills')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   return (
-    <Container className='flex-column-center'>
+    <Container className='flex-column-center' ref={refs.skills}>
       <figure>
         <CodeIcon/>
       </figure>

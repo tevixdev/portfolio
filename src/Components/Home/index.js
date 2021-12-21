@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import { useTranslation } from 'react-i18next'
 
@@ -8,8 +8,12 @@ import myProfileImg from 'Assets/Images/esteban-linkedin.jpg'
 import itImg from 'Assets/Images/it.svg'
 
 const Home = () => {
-  const { refs } = useContext(RefsContext)
+  const { refs, setSection } = useContext(RefsContext)
   const { t } = useTranslation('home')
+  useEffect(() => {
+    setSection('home')
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Container ref={refs.home}>

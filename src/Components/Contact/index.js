@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import { Context as RefsContext } from 'Context/RefsContext'
 import { Footer, Img, Title, ContainerIcons, A } from './styles'
-import Instagram from 'Components/Icons/Instagram'
-import LinkedIn from 'Components/Icons/LinkedIn'
 import logo from 'Assets/Images/logo-white.svg'
 
 const Contact = () => {
+  const { refs, setSection } = useContext(RefsContext)
   const { t } = useTranslation('contact')
+  useEffect(() => {
+    setSection('contact')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   return (
-    <Footer>
+    <Footer ref={refs.contact}>
       <Img alt='logo' src={logo}/>
       <Title>
         {t('title')}
