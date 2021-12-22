@@ -11,7 +11,7 @@ import flagEnglish from 'Assets/Images/united_flag.ico'
 export const SelectLanguage = () => {
   const { t, i18n } = useTranslation('selectLanguage')
   const language = localStorage.getItem('language')
-  const flag = language === 'en' ? flagEnglish : flagSpanish
+  const flag = language === 'en' ? flagSpanish : flagEnglish
 
   const changeLanguage = ({ language }) => {
     if (language === null || language === 'es') {
