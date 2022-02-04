@@ -51,6 +51,7 @@ const Project = ({
       <Img
         alt={title}
         src={imgPath}
+        style={{ backgroundImage: `url(${imgPath})` }}
       />
     </Figure>
   )

@@ -19,7 +19,7 @@ export const Title = styled.h1`
     font-weight: 300;
     font-size: 1.6rem;
     margin: 2rem auto;    
-    opacity: 0.7;
+    opacity: 0.9;
     color: var(--white);
     max-width: 400px;
     text-align: center;

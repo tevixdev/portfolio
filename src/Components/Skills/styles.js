@@ -35,7 +35,7 @@ export const Img = styled.img`
     width: 50px;
 `
 
-export const ContainerLogo = styled.div`
+export const ContainerLogo = styled.li`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

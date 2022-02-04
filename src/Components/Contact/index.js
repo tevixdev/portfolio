@@ -15,11 +15,13 @@ const Contact = () => {
       </Title>
       <ContainerIcons>
         <A
+          aria-hidden="true"
           className="fab fa-instagram"
           href='https://www.instagram.com/estebanmilicich/'
           target='_blank'
         />
         <A
+          aria-hidden="true"
           className="fab fa-linkedin-in"
           href='https://www.linkedin.com/in/estebanmilicich/'
           target='_blank'

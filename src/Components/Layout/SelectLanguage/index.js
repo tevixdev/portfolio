@@ -29,7 +29,7 @@ export const SelectLanguage = () => {
       onClick={() => changeLanguage({ language })}
     >
       <Span>
-        <Img src={flag}/>
+        <Img alt='language' src={flag}/>
         {t('textPrimary')}
       </Span>
     </Button>
